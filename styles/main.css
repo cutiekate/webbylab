@@ -37,8 +37,8 @@ h1 {
     letter-spacing: 0.15px;
     color: #023135;
     text-decoration: none;
-    -webkit-transition: .5s;
-    transition: .5s; }
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
   .header__nav-item a:hover {
     color: #007a5c; }
   .header__head {
@@ -46,7 +46,7 @@ h1 {
     font-size: 50px;
     line-height: 64px;
     letter-spacing: 0.31px;
-    color: #32404D;
+    color: #32404d;
     margin-top: 70px; }
   .header__text {
     font-family: Roboto, sans-serif;
@@ -84,7 +84,7 @@ h1 {
       font-size: 40px;
       line-height: 55px;
       margin-top: 80px; }
-    .header .header__button {
+    .header__button {
       margin-top: 35px;
       margin-bottom: 0; }
     .header__img {
@@ -128,7 +128,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .header {
-    background-color: #FFF7EF; } }
+    background-color: #fff7ef; } }
 
 @media screen and (max-width: 414px) {
   .header {
@@ -193,7 +193,7 @@ h1 {
     padding-top: 84px;
     position: relative; }
   .description__better {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 24px;
     line-height: 32px;
     text-align: center;
@@ -229,7 +229,7 @@ h1 {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.15px;
-    color: #000000; }
+    color: #000; }
   @media screen and (max-width: 768px) {
     .description__headers {
       margin-top: 10px;
@@ -369,7 +369,7 @@ h1 {
 @media screen and (max-width: 768px) {
   .desc-card {
     width: 160px;
-    padding: 10px 10px 10px; }
+    padding: 10px; }
   .card-2 {
     left: 78%; } }
 
@@ -459,7 +459,7 @@ h1 {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.15px;
-    color: #909EAB;
+    color: #909eab;
     margin-top: 13px; }
   @media screen and (max-width: 414px) {
     .tutors__header {
@@ -491,12 +491,12 @@ h1 {
     border: 1px solid #ebf4ff;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    -webkit-box-shadow: 0px 2px 25px rgba(76, 106, 170, 0.22);
-            box-shadow: 0px 2px 25px rgba(76, 106, 170, 0.22);
+    -webkit-box-shadow: 0 2px 25px rgba(76, 106, 170, 0.22);
+            box-shadow: 0 2px 25px rgba(76, 106, 170, 0.22);
     border-radius: 20px;
     padding: 23px 33px 23px 25px;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     cursor: pointer; }
   .plan__card:hover {
     -webkit-box-shadow: 10px 20px 25px rgba(76, 106, 170, 0.22);
@@ -530,8 +530,8 @@ h1 {
     color: #fff;
     padding: 10px 86px;
     margin-top: 30px;
-    -webkit-transition: .5s;
-    transition: .5s; }
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
   .plan__card button:hover {
     -webkit-box-shadow: 10px 20px 15px rgba(76, 106, 170, 0.22);
             box-shadow: 10px 20px 15px rgba(76, 106, 170, 0.22); }
@@ -541,8 +541,6 @@ h1 {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-    .plan__card:first-child {
-      margin-right: 0; }
     .plan__card {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -554,7 +552,9 @@ h1 {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+    .plan__card:first-child {
+      margin-right: 0; } }
   @media screen and (min-width: 375px) {
     .plan__header {
       font-size: 27px; } }
@@ -599,8 +599,8 @@ h1 {
     line-height: 20px;
     letter-spacing: 0.15px;
     color: #023135;
-    -webkit-transition: .5s;
-    transition: .5s; }
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
   .footer__link:hover {
     color: #007a5c; }
   @media screen and (max-width: 768px) {
