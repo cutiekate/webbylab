@@ -447,7 +447,12 @@ h1 {
   .tutors__header--green {
     color: #007a5c; }
   .tutors__link {
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+  .tutors__link:hover {
+    text-decoration: none;
+    color: #007a5c; }
   .tutors__link p {
     font-family: Roboto, sans-serif;
     font-size: 16px;
