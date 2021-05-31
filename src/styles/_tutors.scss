@@ -20,6 +20,11 @@
         text-decoration: none;
     }
 
+    &__link:hover {
+        text-decoration: none;
+        color:#007a5c;
+    }
+
     &__link p {
         font-family: Roboto, sans-serif;
         font-size: 16px;
