@@ -656,4 +656,7 @@ h1 {
   -webkit-box-shadow: 10px 20px 25px rgba(76, 106, 170, 0.22);
           box-shadow: 10px 20px 25px rgba(76, 106, 170, 0.22); }
 
+html {
+  scroll-behavior: auto; }
+
 /*# sourceMappingURL=main.css.map */
