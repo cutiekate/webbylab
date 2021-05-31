@@ -1,7 +1,11 @@
 @import "utils";
 @import "fonts";
 @import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "header";
+@import "description";
+@import "desc-card";
+@import "benefits";
+@import "tutors";
+@import "plan";
+@import "footer";
+@import "modal";

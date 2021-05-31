@@ -1,0 +1,40 @@
+.tutors {
+    background: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__header {
+        font-family: Roboto, sans-serif;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #023135;
+    }
+    
+    &__header--green {
+        color: #007a5c;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__link p {
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.15px;
+        color: #909EAB;
+        margin-top: 13px;
+
+    }
+
+    @media screen and (max-width: 414px) { 
+        &__header {
+        font-size: 25px;
+    }
+        
+    }
+}

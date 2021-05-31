@@ -1,0 +1,137 @@
+.desc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ebf4ff;
+  box-sizing: border-box;
+  box-shadow: 0 4px 7px rgba(222, 234, 249, 0.59);
+  border-radius: 24px;
+  position: absolute;
+  width: 260px;
+  padding: 16px 22px 20px;
+  transition: 0.5s;
+  cursor: pointer;
+
+  &__number {
+    width: 36px;
+    height: 36px;
+    background: #32404d;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  &__number span {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+  }
+
+  &__text {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #023135;
+  }
+}
+
+.card-1 {
+  top: 10%;
+  left: 10%;
+}
+
+.card-2 {
+  top: 30%;
+  left: 70%;
+}
+
+.card-3 {
+  top: 48%;
+  left: 8%;
+}
+
+.arrow-1 {
+  position: absolute;
+  top: 35%;
+  left: 22%;
+}
+.arrow-2 {
+    position: absolute;
+    top: 55%;
+    left: 65%;
+}
+.arrow-3 {
+  position: absolute;
+  top: 72%;
+  left: 25%;
+}
+
+.desc-card:hover {
+  box-shadow: 10px 20px 25px rgba(76, 106, 170, 0.22);
+}
+
+@media screen and (max-width: 1024px){
+  .card-1 {
+    top: 10%;
+    left: 0%;
+  }
+
+  .arrow-1 {
+    top: 36%;
+    left: 15%;
+  }
+
+  .card-3 {
+    top: 48%;
+    left: 0%;
+  }
+
+  .arrow-3 {
+    top: 75%;
+    left: 19%;
+   }
+
+  .card-2 {
+    left: 71%;
+   }
+
+  .arrow-2 {
+    left: 71%;
+   }
+}
+
+@media screen and (max-width: 768px){
+    .desc-card {
+        width: 160px;
+        padding: 10px 10px 10px;
+    }
+    .card-2 {
+        left: 78%;
+    }
+}
+@media screen and (max-width: 414px){
+    .desc-card {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .arrow-1,
+    .arrow-2,
+    .arrow-3 {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
