@@ -9,3 +9,7 @@
 @import "plan";
 @import "footer";
 @import "modal";
+
+html {
+    scroll-behavior: auto;
+}
