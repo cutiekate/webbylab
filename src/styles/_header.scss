@@ -1,172 +1,179 @@
 .header {
-    width: 100%;
-    height: 615px;
-    background: url(../images/header-bg.png) no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 615px;
+  background: url(../images/header-bg.png) no-repeat;
+  background-size: cover;
 
-    &__logo {
-        margin-top: 16px;
-        cursor: pointer;
-    }
+  &__logo {
+    margin-top: 16px;
+    cursor: pointer;
+  }
 
-    &__nav {
-        margin-top: 31px;
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-    }
+  &__nav {
+    margin-top: 31px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    &__nav-item {
-        margin-left: 48px;
-    }
+  &__nav-item {
+    margin-left: 48px;
+  }
     
-    &__nav-item a {
-        font-family: Roboto, sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        letter-spacing: 0.15px;
-        color: #023135;
-        text-decoration: none;
-        transition: .5s;
-    }
+  &__nav-item a {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #023135;
+    text-decoration: none;
+    transition: 0.5s;
+  }
 
-    &__nav-item a:hover {
-        color: #007a5c;
+  &__nav-item a:hover {
+    color: #007a5c;
+  }
+
+  &__head {
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    line-height: 64px;
+    letter-spacing: 0.31px;
+    color: #32404d;
+    margin-top: 70px;
+  }
+
+  &__text {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #023135;
+    margin-top: 20px;
+  }
+
+  &__button {
+    margin-top: 60px;
+    margin-bottom: 135px;
+    background: #007a5c;
+    border-radius: 30px;
+    padding: 18px 38px;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  &__button:hover {
+    box-shadow: 10px 20px 25px rgba(76, 106, 170, 0.22);
+  }
+
+  &__img {
+    background: url(../images/header-phone.png) no-repeat;
+    background-size: contain;
+    background-position: 40%;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__nav-item {
+      margin-left: 40px;
     }
 
     &__head {
-        font-family: Roboto, sans-serif;
-        font-size: 50px;
-        line-height: 64px;
-        letter-spacing: 0.31px;
-        color: #32404D;
-        margin-top: 70px;
+      font-size: 40px;
+      line-height: 55px;
+      margin-top: 80px;
     }
-
-    &__text {
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.15px;
-        color: #023135;
-        margin-top: 20px;
-    }
-
+        
     &__button {
-        margin-top: 60px;
-        margin-bottom: 135px;
-        background: #007a5c;
-        border-radius: 30px;
-        padding: 18px 38px;
-        border: none;
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        letter-spacing: 0.15px;
-        color: #fff;
-        transition: 0.5s;
-    }
-
-    &__button:hover {
-        box-shadow: 10px 20px 25px rgba(76, 106, 170, 0.22);
-
+      margin-top: 35px;
+      margin-bottom: 0;
     }
 
     &__img {
-        background: url(../images/header-phone.png) no-repeat;
-        background-size: contain;
-        background-position: 40%;
+      position: relative;
+      top: 100px;
+      left: 24px;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    &__nav,
+    &__img {
+      display: none;
     }
 
-    @media screen and (max-width: 768px) {
-        &__nav-item {
-            margin-left: 40px;
-        }
-
-        &__head {
-            font-size: 40px;
-            line-height: 55px;
-            margin-top: 80px;
-        }
-        .header__button {
-            margin-top: 35px;
-            margin-bottom: 0;
-        }
-        &__img {
-            position: relative;
-            top: 100px;
-            left: 24px;
-        }
+    &__head {
+      font-size: 40px;
+      line-height: 64px;
+      margin-top: 55px;
+      text-align: center;
     }
 
-    @media screen and (max-width: 414px) {
-       &__nav,
-       &__img {
-           display: none;
-       }
-       &__head {
-            font-size: 40px;
-            line-height: 64px;
-            margin-top: 55px;
-            text-align: center;
-       }
-       &__text {
-            font-size: 20px;
-            line-height: 45px;
-            margin-top: 20px;
-            text-align: center;
-        }
-        &__button {
-            display: block;
-            margin: 0 auto;
-            padding: 20px 65px;
-            font-size: 20px;
-        }
-    }
-    @media screen and (min-width: 375px) { 
-        &__head {
-            font-size: 35px;
-            line-height: 53px;
-        }
-        &__text {
-            font-size: 19px;
-            line-height: 45px;
-            margin-top: 40px;
-        }
+    &__text {
+      font-size: 20px;
+      line-height: 45px;
+      margin-top: 20px;
+      text-align: center;
     }
 
-    @media screen and (min-width: 320px) { 
-        &__head {
-            font-size: 30px;
-            line-height: 50px;
-        }
-        &__text {
-            font-size: 20px;
-            line-height: 42px;
-            margin-top: 20px;
-        }
+    &__button {
+      display: block;
+      margin: 0 auto;
+      padding: 20px 65px;
+      font-size: 20px;
     }
+  }
+
+  @media screen and (min-width: 375px) {
+    &__head {
+      font-size: 35px;
+      line-height: 53px;
+    }
+
+    &__text {
+      font-size: 19px;
+      line-height: 45px;
+      margin-top: 40px;
+    }
+  }
+
+  @media screen and (min-width: 320px) {
+
+    &__head {
+      font-size: 30px;
+      line-height: 50px;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 42px;
+      margin-top: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-        background-color: #FFF7EF;
-    }
-    
+  .header {
+    background-color: #fff7ef;
+  }
 }
 
-@media screen and (max-width: 414px){
-    .header {
-        height: 545px;
-    }
+@media screen and (max-width: 414px) {
+  .header {
+    height: 545px;
+  }
 }
 
-@media screen and (max-width: 375px){
-    .header {
-        height: 580px;
-    }
+@media screen and (max-width: 375px) {
+  .header {
+    height: 580px;
+  }
 }

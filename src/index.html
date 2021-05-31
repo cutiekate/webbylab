@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nerdify - video solution</title>
   <!-- Bootstrap CSS -->
-  <link href="./styles/bootstrap.min.css" rel="stylesheet">
+  <link href="./scripts/lib/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 
@@ -16,7 +16,10 @@
       <div class="row">
         <div class="col">
           <a href="#">
-            <img class="header__logo" src="./images/logo.png" alt="Nerdify - video solution">
+            <img
+            class="header__logo"
+            src="./images/logo.png"
+            alt="Nerdify - video solution">
           </a>
         </div>
         <div class="col">
@@ -35,9 +38,9 @@
           <p class="header__text">An expert tutor will record a step by step <br>
             explanation for your request
           </p>
-          <button 
-          class="header__button" 
-          data-toggle="modal" 
+          <button
+          class="header__button"
+          data-toggle="modal"
           data-target="#modal">Subscribe Now</button>
         </div>
         <div class="col header__img"></div>
@@ -74,7 +77,10 @@
       </div>
       <div class="row">
         <div class="col-12 description__smartphone-block">
-          <img class="description__phone" src="images/smartphone.png" alt="smartphone-img">
+          <img
+          class="description__phone"
+          src="images/smartphone.png"
+          alt="smartphone-img">
           <div class="description__card desc-card card-1">
             <div class="desc-card__number">
               <span>1</span>
@@ -83,7 +89,10 @@
               Send your problem: take a photo, copy & paste instructions or attach files.
             </p>
           </div>
-          <img class="arrow-1" src="images/arrow-1.png" alt="arrow">
+          <img
+          class="arrow-1"
+          src="images/arrow-1.png"
+          alt="arrow">
           <div class="description__card desc-card card-2">
             <div class="desc-card__number">
               <span>2</span>
@@ -92,7 +101,10 @@
               Get a video with a solution explained in details within an hour!
             </p>
           </div>
-          <img class="arrow-2" src="images/arrow-2.png" alt="arrow">
+          <img
+          class="arrow-2"
+          src="images/arrow-2.png"
+          alt="arrow">
           <div class="description__card desc-card card-3">
             <div class="desc-card__number">
               <span>3</span>
@@ -101,7 +113,10 @@
               Chat with your tutor for the next 24 hours to clarify any questions.
             </p>
           </div>
-          <img class="arrow-3" src="images/arrow-3.png" alt="arrow">
+          <img
+          class="arrow-3"
+          src="images/arrow-3.png"
+          alt="arrow">
         </div>
       </div>
       <div class="row">
@@ -198,8 +213,8 @@
             <p>Then: $5/problem</p>
             <p>Private chat with tutor</p>
             <p>Unlimited access 24/7</p>
-            <button 
-            data-toggle="modal" 
+            <button
+            data-toggle="modal"
             data-target="#modal">
             Subscribe Now
           </button>
@@ -210,8 +225,8 @@
             <p>Then: $4/problem</p>
             <p>Private chat with tutor</p>
             <p>Unlimited access 24/7</p>
-            <button 
-            data-toggle="modal" 
+            <button
+            data-toggle="modal"
             data-target="#modal">
             Subscribe Now
           </button>
@@ -225,7 +240,10 @@
       <div class="row">
         <div class="col footer__logo">
           <a href="#">
-            <img class="footer__logo-img" src="images/logo-footer.png" alt="logo">
+            <img
+            class="footer__logo-img"
+            src="images/logo-footer.png"
+            alt="logo">
           </a>
         </div>
         <div class="col footer__links">
@@ -246,31 +264,47 @@
     </div>
   </footer>
   <!--Modal-->
-  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div
+  class="modal fade"
+  id="modal" tabindex="-1"
+  role="dialog" aria-labelledby="modalLabel"
+  aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
           <form id="form-3" class="form form-modal">
             <h4 class="modal__header">Subscription form</h4>
             <div class="form-input">
-              <input class="form-control form__input" type="text" placeholder="Your name" required>
-              <input  class="form-control form__input" type="email" placeholder="Email" pattern="^[-._A-Za-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required>
-              <input  class="form-control form__input" type="tel" placeholder="Phone" id="phone-3" maxlength="16" required>
+              <input
+              class="form-control form__input" type="text"
+              placeholder="Your name" required>
+              <input
+              class="form-control form__input" type="email"
+              placeholder="Email"
+              pattern="^[-._A-Za-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required>
+              <input
+              class="form-control form__input" type="tel"
+              placeholder="Phone" id="phone-3"
+              maxlength="16" required>
             </div>
-            <button type="submit" id="button-3" class="form__button">
+            <button
+            type="submit"
+            id="button-3"
+            class="form__button">
               Send
-            </button>    
+            </button>
           </form>
         </div>
-
       </div>
     </div>
   </div>
-
-
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
@@ -279,5 +313,4 @@
   <script src="./scripts/lib/bootstrap.min.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
 </body>
-
 </html>

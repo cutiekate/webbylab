@@ -1,73 +1,73 @@
 .footer {
-    background: #fff;
-    padding-top: 124px;
+  background: #fff;
+  padding-top: 124px;
 
-    &__logo-img {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
+  &__logo-img {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
 
-    &__links {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
+  &__links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
-    &__list {
-        display: flex;
-        list-style: none;
-        padding: 0;
-    }
+  &__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
 
+  &__list li {
+    margin-left: 27px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #023135;
+    transition: 0.5s;
+  }
+
+  &__link:hover {
+    color: #007a5c;
+  }
+
+  @media screen and (max-width: 768px) {
     &__list li {
-        margin-left: 27px;
+      margin-left: 25px;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    &__logo,
+    &__links {
+      min-width: 100%;
+      display: flex;
+      justify-content: center;
     }
 
     &__link {
-        text-decoration: none;
-        font-family: Roboto, sans-serif;
-        font-size: 12px;
-        line-height: 20px;
-        letter-spacing: 0.15px;
-        color: #023135;
-        transition: .5s;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    &__list {
+      flex-direction: column;
+      align-items: center;
     }
 
-    &__link:hover {
-       color: #007a5c;
+    &__link {
+      font-size: 14px;
     }
 
-    @media screen and (max-width: 768px) {
-        &__list li {
-        margin-left: 25px;
-        }
+    &__list li {
+      margin-left: 0;
     }
-
-    @media screen and (max-width: 414px) {
-        &__logo,
-        &__links {
-           min-width: 100%;
-           display: flex;
-           justify-content: center;
-        }
-
-        &__link {
-            font-size: 14px;
-        }
-    }
-    @media screen and (max-width: 414px) {
-        &__list {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__link {
-            font-size: 14px;
-        }
-
-        &__list li {
-            margin-left: 0;
-        }
-    }
-
+  }
 }
